@@ -25,4 +25,13 @@
     color: white;
     border-radius: 5px;
   }
+  .tiempoElegido{
+    color: red;
+    background-color: yellow;
+    border-radius: 5%;
+    border: 0.5px black transparent;
+    height: 30px;
+    text-align: center;
+    justify-content: center;
+  }
   
