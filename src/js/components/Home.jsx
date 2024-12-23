@@ -45,7 +45,7 @@ const Home = () => {
         <button className="btn btn-primary" onClick={resumirContador}>Resumir</button>
       </div>
       <div className="mt-3">
-        <label className='tiempoElegido' htmlFor="tiempoAlerta">-Tiempo para la alerta (segundos):-  </label>
+        <label className='btn btn-warning mt-2' htmlFor="tiempoAlerta">-Tiempo para la alerta (segundos):-  </label>
         <input type="number" id="tiempoAlerta" onChange={manejarCambioAlerta} />
       </div>
       <CuentaAtras onComplete={handleCountdownComplete}/>   

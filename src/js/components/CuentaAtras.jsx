@@ -48,15 +48,16 @@ const CuentaAtras = ({ onComplete }) => {
 
     return (
         <div className="text-center">
+           
+            <button className="btn btn-warning mt-2" onClick={startCountdown}>
+                Iniciar Cuenta Atrás
+            </button>
             <input
                 type="number"
                 value={inputValue}
                 onChange={handleInputChange}
                 placeholder="Introduce tiempo en segundos"
             />
-            <button className="btn btn-primary mt-2" onClick={startCountdown}>
-                Iniciar Cuenta Atrás
-            </button>
             {countdownValue !== null && (
                 <div className="mt-3">
                     <ProgressBar now={countdownValue} max={inputValue} />
