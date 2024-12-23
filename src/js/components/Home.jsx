@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
-
 import ContadorSegundos from './ContadorSegundos';
+import CuentaAtras from './CuentaAtras';
 
 const Home = () => {
   const [segundos, setSegundos] = useState(0);
@@ -32,7 +32,9 @@ const Home = () => {
     setEstaCorriendo(true);
   };
   const resumirContador = () => setEstaCorriendo(true);
+
   const manejarCambioAlerta = (e) => setTiempoAlerta(Number(e.target.value));
+  const handleCountdownComplete = () => alert("¡Cuenta atrás completada!");
 
   return (
     <div className="text-center">
@@ -46,8 +48,10 @@ const Home = () => {
         <label className='tiempoElegido' htmlFor="tiempoAlerta">-Tiempo para la alerta (segundos):-  </label>
         <input type="number" id="tiempoAlerta" onChange={manejarCambioAlerta} />
       </div>
+      <CuentaAtras onComplete={handleCountdownComplete}/>   
     </div>
   );
 };
 
 export default Home;
+

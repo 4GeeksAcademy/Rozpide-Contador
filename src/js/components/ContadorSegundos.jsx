@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import './ContadorSegundos.css'; // importo el archivo css para las clssName
-// funcion ContadorSegundos que recibe la propiedad segundos
+// funcion Contador de Segundos que recibe la propiedad segundos
 const ContadorSegundos = ({ segundos }) => {
     // funcion para formatear segundos, que convierte a string el numero de segundos
   const formatearSegundos = (segundos) => {
