@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+/*import React, { useState, useEffect, useRef } from "react";
 import PropTypes from 'prop-types';
 import ProgressBar from 'react-bootstrap/ProgressBar';
 
@@ -73,3 +73,4 @@ CuentaAtras.propTypes = {
 };
 
 export default CuentaAtras;
+*/
